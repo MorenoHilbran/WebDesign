@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>RenoCars</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Reno <span> Cars</span></a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#brands">Brands</a>
+            <a href="#cars">Cars for Sale</a>
+            <a href="#about">About</a>
+            <a href="#articles">Articles</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Reno<span>Cars</span></h1>
+            <h3>Where all your favourite cars available</h3>
+            <a href="cars.html" class="btn">See Products</a>
+            <a href="brands.html" class="btn1">See Brands</a>
+        </div>
+    </section>
+
+    <section class="brands" id="brands">
+        <div class="slide-wrapper">
+            <div class="slide-container">
+                <h4>TOP MODELS</h4>
+                <div style="display: flex;">
+                    <img id="sub-slide" src="images/arrow-white.png" width="64" style="transform: rotate(180deg); margin-right: 20px; cursor: pointer;" />
+                    <img id="add-slide" src="images/arrow-white.png" width="64" style="cursor: pointer;" />
+                </div>
+                <h1 class="slide-header"></h1>
+                <h4 class="slide-sub"></h4>
+            </div>
+        
+            <img src="images/porsche.png" width="100" data-index=0 class="slide-img" />
+            <img src="images/nissan.png" width="100" data-index=1 class="slide-img" />
+            <img src="images/BMW.png" width="100" data-index=2 class="slide-img active" />
+        </div>
+    </section>
+    
+
+    <section class="cars-for-sale" id="cars">
+        <h2>Cars for Sale</h2>
+        <div class="cars-container container">
+            <div class="box">
+                <img src="images/911 Carrera GTS.jpg" alt="">
+                <h2>Porsche 911 Carrera GTS</h2>
+            </div>
+            <div class="box">
+                <img src="images/718 Spyder.jpeg" alt="">
+                <h2>Porsche 718 Spyder</h2>
+            </div>
+            <div class="box">
+                <img src="images/Cayman GT4.jpg" alt="">
+                <h2>Porsche Cayman GT4</h2>
+            </div>
+
+            <div class="box">
+                <img src="images/Taycan Turbo S.jpg" alt="">
+                <h2>Porsche Taycan Turbo S</h2>
+            </div>
+            <div class="box">
+                <img src="images/BMW I5 M60.jpg" alt="">
+                <h2>BMW I5 M60</h2>
+            </div>
+            <div class="box">
+                <img src="images/Nissan Skyline GT R34.jpg" alt="">
+                <h2>Nissan Skyline GT</h2>
+            </div>
+
+        </div>
+    </section>
+    
+    <section class="about container" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt=" ">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>Cheap Prices With <br> Quality Cars</h2>
+            <p>RenoCars is your one-stop shop for all your automotive needs in Purwokerto, Central Java!  </p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="Articles" id="articles">
+        <div class="heading">
+            <span>Articles & News</span>
+            <h2>Our Blog Content</h2>
+            <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="blog-container">
+            <div class="box">
+                <img src="images/car1.jpg" alt="">
+                <h4>Feb 14 2024</h4>
+                <h3>How to Get Perfect Condition Car At Low Price</h3>
+                <p>Lorem ipsum dolor sit amet consectetetur adipisicing elit.</p>
+                <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+
+            <div class="box">
+                <img src="images/car4.jpg" alt="">
+                <h4>Feb 14 2024</h4>
+                <h3>How to Get Perfect Condition Car At Low Price</h3>
+                <p>Lorem ipsum dolor sit amet consectetetur adipisicing elit.</p>
+                <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+
+            <div class="box">
+                <img src="images/car3.jpg" alt="">
+                <h4>Feb 14 2024</h4>
+                <h3>How to Get Perfect Condition Car At Low Price</h3>
+                <p>Lorem ipsum dolor sit amet consectetetur adipisicing elit.</p>
+                <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+
+            <div class="box">
+                <img src="images/car2.jpg" alt="">
+                <h4>Feb 14 2024</h4>
+                <h3>How to Get Perfect Condition Car At Low Price</h3>
+                <p>Lorem ipsum dolor sit amet consectetetur adipisicing elit.</p>
+                <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+        </div>
+
+    </section>
+    <section class="footer" id="contact">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <a href="#" class="logo">Reno<span>Cars</span></a>
+                <div class="social-icons">
+                    <a href="#"><img src="images/Item → Link - Instagram, External link.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/Item → Link - TikTok, External link.png" alt="TikTok"></a>
+                    <a href="#"><img src="images/Item → Link - Facebook, External link.png" alt="Facebook"></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Page</h3>
+                <a href="#">Home</a>
+                <a href="#">Brands</a>
+                <a href="#">Cars for Sale</a>
+                <a href="#">Article</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <a href="#">Privacy</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Cookies Policy</a>
+            </div>
+            
+        <div class="footer-box">
+                <h3>Contact</h3>
+               <p>Jakarta</p>
+               <p>Purwokerto</p>
+               <p>Pati</p>
+               <p>Tegal</p>
+            </div>
+</section>
+
+<div class="copyright">
+    <p>&#169;  Moreno Hilbran All Right Reserved</p>
+</div>
+    <script src="index.js"></script>
+
+</body>
+</html>

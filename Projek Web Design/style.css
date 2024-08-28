@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 9%;
+    background-color: #313638;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.navbar a:hover,
+.header a .active{
+    color: #ffb300;
+    text-shadow: 0 0 30px #ffb300;
+    font-size: 20px;
+}
+
+.span{
+    color: #ffb300;
+}
+
+.header a span {
+    color: #ffb300;
+    font-weight: 700;
+}
+
+.header a{
+    color: #fff;
+}
+
+.logo{
+    display: flex;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: default;
+    color:#f6f6f6
+}
+
+.navbar a{
+    font-size: 1 rem;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: .3s;
+}
+section{
+    padding: 10rem 9% 2rem;
+    margin: 0; /* Menambahkan aturan untuk menghapus margin */
+}
+.slide-wrapper {
+    display: flex;
+    position: relative;
+}
+
+.slide-img {
+    flex: 1;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    /*clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);*/
+    filter: brightness(20%);
+    transition: flex 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.slide-wrapper .active {
+    flex: 2;
+    filter: brightness(100%);
+}
+
+.slide-container {
+    position: absolute;
+    color: white;
+    padding: 7.5% 0 0 100px;
+}
+
+.slide-container h1 {
+    font-size: 84px;
+    margin: 150px 0 0 0;
+}
+
+.slide-container h4 {
+    font-size: 36px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.slide-header {
+    animation: slideIn 1s ease-out forwards;
+}
+
+.slide-sub {
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.brands{
+    padding: 0rem 0% 0rem;
+    height: auto; /* Menambahkan aturan untuk menghapus batas tinggi */
+}
+
+.home {
+    background-image: url('images/homepage.PNG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.home-content h3:nth-of-type(2) {
+   margin-bottom: 2rem;
+}
+
+.btn{
+    background-color: #313638;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    border-radius: 4rem;
+    box-shadow: 0 0 0.5rem black;
+    font-size: 1.6rem;
+    color: white;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    margin-top: 35px;
+    transition: .3s;
+}
+
+.btn1{
+    background-color: transparent;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    border-radius: 4rem;
+    box-shadow: 0 0 0.5rem #313638;
+    font-size: 1.6rem;
+    color: #313638;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    margin-top: 35px;
+    margin-left: 15px;
+    transition: .3s;
+}
+
+.btn:hover{
+        box-shadow: none;
+        background-color: #ffb300;
+    }
+
+.btn1:hover {
+        box-shadow: none;
+        background-color: lightgrey;
+}
+
+.brands {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .slider {
+        display: flex;
+        width: 300%; /* Menambahkan ukuran lebar agar memuat semua slide */
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+        flex: 1; /* Mengisi ruang dengan slide yang sama besar */
+        background-size: cover;
+        background-position: center;
+    }
+    
+    button.prev,
+    button.next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    
+    button.prev {
+        left: 10px;
+    }
+    
+    button.next {
+        right: 10px;
+    }
+
+.brands-heading {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    padding: 0;
+    background-color: #313638;
+}
+
+.cars-for-sale h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #fff;
+    background-color: #313638;
+}
+
+.cars-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.cars-container .box {
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 30%;
+    
+}
+.cars-container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.cars-container .box img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.cars-container .box h2{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    background:#313638;
+    padding: 8px;
+    border-radius: 0.5rem;
+}
+.cars-container .box:hover h2 {
+    background: #ffb300;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img img {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    width: 80%; 
+    max-width: 960px;
+}
+.about-text {
+    flex: 1 1 21rem;
+}
+.about-text span {
+    font-weight: 500;
+    color: #313638;
+}
+.about-text h2 {
+    font-size: 1.7rem;
+}
+.about-text p {
+    font-size: 0.938rem;
+    margin:0.5rem 0 1.4rem;
+}
+.blog-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.blog-container .box{
+    flex: 1 1 13rem;
+    padding: 10px;
+    max-width: fit-content;
+}
+.blog-container .box:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background: #f6f6f6;
+}
+
+.blog-container .box h4 {
+    margin-top: 10px;
+    font-weight: 500;
+    color: red;
+}
+
+.blog-container .box img {
+    width: 100%;
+    height: auto;
+}
+.blog-container .box span{
+    font-size: 0.8rem;
+    color: #313638;
+}
+.blog-container h3{
+    font-size: 1.2rem;
+}
+.blog-container .box p{
+    font-size: 0.938rem;
+    margin: 4px 0;
+}
+.blog-container .box a{
+    text-decoration: none;
+}
+.blog-container .box a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+.blog-container .box .blog-btn{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    color: #313638;
+}
+.blog-container .box .blog-btn .bx{
+    font-size: 20px;
+    
+}
+.footer {
+    background:#313638;
+    color: #f6f6f6;
+    border-top: 2px solid #313638;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer-container .logo{
+    color:#f6f6f6;
+    margin-bottom: 1rem;
+}
+
+.footer-container .footer-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a{
+    font-size: 24px;
+    color: #313638;
+    margin-right: 1rem;
+}
+
+.social a:hover{
+    color:#ffb300;
+}
+
+.footer-box h3{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.footer-box a,
+.footer-box p{
+    color:#818181;
+    margin-bottom: 10px;
+}
+
+.footer-box a:hover{
+    color:#ffb300;
+}
+
+.copyright{
+    padding:20px;
+    text-align: center;
+    color:#f6f6f6;
+    background:#313638;
+}
